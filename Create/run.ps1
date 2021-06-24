@@ -19,7 +19,6 @@ $Username = ([System.Web.HttpUtility]::ParseQueryString($Request.Body))['usernam
 
 if ($Username) {
   import-module .\PSfunctions.psm1
-  import-module MSOnline -UseWindowsPowerShell
   $MFARequest = New-MFARequest -EmailToPush $Username
   $RequestText = @"
 $MFARequest

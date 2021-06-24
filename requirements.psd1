@@ -3,6 +3,4 @@
 #
 @{
     # For latest supported version, go to 'https://www.powershellgallery.com/packages/Az'. 
-    'PartnerCenter' = '3.*'
-    'MSOnline'      = '1.*'
 }
